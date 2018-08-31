@@ -1,9 +1,13 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
+  box-sizing: border-box;
+  /* height: 100vh; */
 }
 #editor {
   height: 100vh;
   box-sizing: border-box;
+  margin: 0;
+  resize: none;
+  padding: 8px;
 }

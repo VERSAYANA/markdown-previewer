@@ -1,0 +1,7 @@
+#preview {
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin: 0;
+  padding: 16px;
+}
