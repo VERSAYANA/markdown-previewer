@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import marked from 'marked';
+import Preview from './Preview';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +8,14 @@ class App extends Component {
     super(props);
     this.state = {
       input: '',
+      preview: '',
     };
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
     this.setState({
       input: event.target.value,
+      preview: marked(event.target.value),
     });
   }
   render() {
@@ -23,6 +26,7 @@ class App extends Component {
           value={this.state.input}
           id="editor"
         />
+        <Preview preview={{ __html: this.state.preview }} />
       </div>
     );
   }
