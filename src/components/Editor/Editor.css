@@ -8,16 +8,13 @@
   color: var(--text-color);
   padding: 16px;
 }
-
 code,
 pre {
   background-color: hsl(200, 19%, 25%);
 }
-
 pre {
   padding: 8px;
 }
-
 blockquote {
   color: rgba(255, 255, 255, 0.75);
   border-left: 3px solid rgba(255, 255, 255, 0.75);
