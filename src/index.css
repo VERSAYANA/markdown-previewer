@@ -5,8 +5,8 @@ body {
 
   --foreground-color: #21272b;
   --background-color: #263238;
-  --header-color: rgba(255, 255, 255, 0.95);
+  --header-color: rgba(255, 255, 255, 0.96);
   --text-color: rgba(255, 255, 255, 0.87);
-
+  --accent-color: #26c9b3;
   background-color: var(--background-color);
 }
