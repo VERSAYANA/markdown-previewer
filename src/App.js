@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import marked from 'marked';
-import Preview from './Preview';
+import Editor from './components/Editor/Editor';
+import Previewer from './components/Previewer/Previewer';
 import './App.css';
 
 class App extends Component {
@@ -10,23 +11,19 @@ class App extends Component {
       input: '',
       preview: '',
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.onEditorChange = this.onEditorChange.bind(this);
   }
-  handleChange(event) {
+  onEditorChange(value) {
     this.setState({
-      input: event.target.value,
-      preview: marked(event.target.value),
+      input: value,
+      preview: marked(value),
     });
   }
   render() {
     return (
       <div className="App">
-        <textarea
-          onChange={this.handleChange}
-          value={this.state.input}
-          id="editor"
-        />
-        <Preview preview={{ __html: this.state.preview }} />
+        <Editor onEditorChange={this.onEditorChange} value={this.state.input} />
+        <Previewer preview={{ __html: this.state.preview }} />
       </div>
     );
   }

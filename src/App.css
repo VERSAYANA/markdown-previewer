@@ -2,15 +2,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
-  /* height: 100vh; */
 }
-#editor {
+
+.section {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   box-sizing: border-box;
-  margin: 0;
-  resize: none;
-  padding: 8px;
-  background-color: #21272b;
-  color: rgba(255, 255, 255, 0.87);
-  /* border: 1px solid black; */
+}
+
+.header {
+  background-color: var(--foreground-color);
+  color: var(--header-color);
+  box-sizing: border-box;
+  padding: 16px;
+  font-weight: bold;
+  /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.4); */
 }
