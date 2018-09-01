@@ -10,7 +10,7 @@ see [Wikipedia](http://en.wikipedia.org/wiki/Markdown)
 
 ----
 
-## markdown quick reference
+## Markdown Quick Reference
 # headers
 
 *emphasis*
