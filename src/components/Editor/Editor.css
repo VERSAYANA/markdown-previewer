@@ -21,7 +21,7 @@ pre {
 blockquote {
   color: rgba(255, 255, 255, 0.75);
   border-left: 3px solid rgba(255, 255, 255, 0.75);
-  padding-left: 4px;
+  padding-left: 8px;
 }
 a {
   color: var(--accent-color);
