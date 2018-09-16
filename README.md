@@ -8,7 +8,7 @@
 </a>
 </div>
 </p>
-<p><strong>To run on your local machine</strong></p>
+<p><strong>To run on your local machine:</strong></p>
 
 ```
 git clone https://github.com/VERSAYANA/markdown-previewer.git
